@@ -116,13 +116,13 @@ const RestaurantDetailsComponent = () => {
                           {item?.card?.info?.description}
                         </p>
                       </div>
-                      <div className="item-img">
+                      <div className="item-img position-relative">
                         <img src={ImgUrl + item?.card?.info?.imageId} alt="" />
                         <button
-                          className="position-absolute"
+                          className="btn position-absolute add"
                           onClick={() => handleAddItem(item)}
                         >
-                          <i className="fa fa-add"></i>Add
+                          <i className="fa fa-plus"></i>Add
                         </button>
                       </div>
                     </div>

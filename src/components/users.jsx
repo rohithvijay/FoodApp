@@ -14,7 +14,7 @@ class Users extends React.Component {
   }
   async componentDidMount() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/support/issues/legal"
+      "https://corsproxy.io/?https://www.swiggy.com/dapi/support/issues/legal"
     );
     const json = await data.json();
 
