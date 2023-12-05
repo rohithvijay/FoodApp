@@ -1,0 +1,245 @@
+.app {
+    font-family: "Roboto";
+}
+.app-theme {
+    background-color:#96dc96;
+}
+.app a {
+    text-decoration: none;
+}
+.app .btn-primary{
+    background-color: #1a571a;
+    border: 1px solid #1a571a;
+}
+.app .btn-primary:focus, .app .btn-primary:hover {
+    background-color: #318731;
+}
+.logo {
+    width: 100px;
+    height: 100px
+}
+.logo img {
+    width: 100%;
+}
+.header-menu .nav-link{
+    font-weight: bold;
+}
+.body-restaurant {
+    min-height:40vh;
+    background-color:#61af61;
+}
+.banner-restaurant .banner {
+    height: 315px;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg-Img {
+    background-image: url("../img/bg-img-banner.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+.banner .form-control {
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 40px;
+}
+.banner .form-control:focus {
+    box-shadow: 2px 3px 14px #c3dfc3;
+    transition: all .2s ease-in-out;
+}
+.banner .btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    /* border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 50px; */
+    border-radius: 0px 50px 50px 0px;
+}
+.search-food {
+    position: relative;
+    width: 500px;
+    text-align: center;
+}
+.fa-search-plus {
+    color: #61af61;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+}
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.rating {
+    display: flex;
+    align-items: center;
+}
+.rating .fa-star {
+    margin-right: 5px;
+    color:#61af61;
+    font-size: 20px;
+}
+.card.resto-card{
+    width:100%;
+    cursor:pointer;
+    box-shadow: 1px 0px 10px #c3dfc3;
+    background-color: #dddddd;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+}
+.card.resto-card:hover .card-img-top{
+    transform: scale(0.95);
+    transition: all .3s ease-in-out;
+}
+.card.resto-card .place{
+    font-weight: bold;
+}
+.resto-card .card-text {
+    font-size: 15px;
+}
+.card-img-top {
+    height: 150px;
+    object-fit: Cover;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.shimmer-container {
+    min-height:80vh;
+}
+.card.shimmer-card {
+    position: relative;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    border-radius: 6px;
+    height: 250px;
+    overflow: hidden;
+    width: 350px;
+    margin: 40px auto;
+  }
+  .card.shimmer-card .shimmerBG {
+    -webkit-animation-duration: 2.2s;
+            animation-duration: 2.2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: shimmer;
+            animation-name: shimmer;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    background: #ddd;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+  }
+  @-webkit-keyframes shimmer {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: -1200px 0;
+    }
+    100% {
+      background-position: 1200px 0;
+    }
+  }
+  .card.shimmer-card .media {
+    height: 200px;
+  }
+  .card.shimmer-card .p-32 {
+    padding: 32px;
+  }
+  .card.shimmer-card .title-line {
+    height: 24px;
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 20px;
+  }
+  .card.shimmer-card .content-line {
+    height: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+  .card.shimmer-card .end {
+    width: 40%;
+  }
+  
+  .m-t-24 {
+    margin-top: 24px;
+  }
+  .rest-ratings {
+    background-color: #fff;
+    padding: 10px;
+    text-align: CENTER;
+    box-shadow: 2px 6px 10px #91f4a7;
+    border-radius: 5px;
+  }
+  .rest-ratings i {
+    color: #61af61;
+  }
+  .rest-details .header-card {
+    background-color: #b1f2a9;
+    padding: 15px;
+    margin: 60px 0;
+    box-shadow: 2px 6px 14px #9bdd73;
+    border-radius:10px;
+  }
+  .border-shade {
+    border-bottom: 1px solid #b8aeae;
+  }
+  .mr-2 {
+    margin-right:30px;
+  }
+  .fa-clock-o,.fa-usd {
+    margin-right:10px;
+  }
+  .items-available {
+    background-color: #b1f2a9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    box-shadow: 2px 6px 14px #9bdd73;
+    list-style: none;
+  }
+  .items-available .card-items-header i {
+    font-size: 25px;
+  }
+  .card-items-header {
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  .item-img {
+    width:100px;
+    height:100px;
+  }
+  .item-img img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+  }
+  .item-sub-card {
+    border-bottom: 1px solid #b8aeae;
+    padding-bottom: 25px;
+    margin: 10px 20px;
+  }
+  .item-sub-card .item-description {
+    font-style: italic;
+    font-size: 15px;
+  }
